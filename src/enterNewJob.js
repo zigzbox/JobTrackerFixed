@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import navBar from './navBar';
 
 
 
@@ -8,6 +9,7 @@ class enterNewJob extends Component {
         return (
             <div>
                 <header><h1>Glen's Job App Tracker</h1></header>
+                <navBar/>
                 <div>
                     <label htmlFor='companyName'>Company Name:</label>
                     <input id='companyName' type='text' />
@@ -21,7 +23,7 @@ class enterNewJob extends Component {
                     <span>No</span>
                     <input id='interveiw' type='checkbox' />
                     <div>
-                        <button>enter new job here</button>
+                        <input type='submit' />
                     </div>
                 </div>
 
