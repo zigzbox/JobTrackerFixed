@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import { Switch, Route } from 'react-router-dom'
 import enterNewJob from './enterNewJob';
+import navBar from './navBar';
 
 
 class App extends Component {
@@ -9,7 +10,7 @@ class App extends Component {
     return (
       <div>
         <header>
-
+        <navBar/>
         </header>
         <Switch>
             <Route exact path='/' component={enterNewJob} />

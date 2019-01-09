@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import navBar from './navBar';
 
 
 
@@ -8,8 +7,7 @@ class enterNewJob extends Component {
     render() {
         return (
             <div>
-                <header><h1>Glen's Job App Tracker</h1></header>
-                <navBar/>
+                <div><h1>Glen's Job App Tracker</h1></div>
                 <div>
                     <label htmlFor='companyName'>Company Name:</label>
                     <input id='companyName' type='text' />
@@ -17,6 +15,8 @@ class enterNewJob extends Component {
                     <input id='dateContacted' type='date' />
                     <label htmlFor='nameOfContact'>Name of Contact:</label>
                     <input id='nameOfContact' type='text' />
+                    <label htmlFor='companyNumber'>Company Phone Number:</label>
+                    <input id='companyNumber' type='phonenumber' />
                     <label htmlFor='interveiw'>Interview:</label>
                     <span>Yes</span>
                     <input id='interveiw' type='checkbox' />
